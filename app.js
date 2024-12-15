@@ -32,18 +32,21 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
 // Enable CORS
-app.use("/api", (req, res, next) => {
+app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "http://localhost:4200");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept"
+  );
   res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
   next();
 });
 
 // wire-up routes to controllers
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
-app.use('/travel', travelRouter);
-app.use('/api', apiRouter);
+app.use("/", indexRouter);
+app.use("/users", usersRouter);
+app.use("/travel", travelRouter);
+app.use("/api", apiRouter); // Correct placement of apiRouter
 app.use("/rooms", roomsRouter);
 app.use("/news", newsRouter);
 app.use("/meals", mealsRouter);
