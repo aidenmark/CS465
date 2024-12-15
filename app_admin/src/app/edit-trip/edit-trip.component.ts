@@ -37,7 +37,7 @@ export class EditTripComponent implements OnInit {
       return;
     }
     console.log('EditTripComponent::ngOnInit');
-    console.log('tripCode: ' + tripCode);
+    console.log('tripCode:', tripCode); // Debugging log
 
     // initialize form
     this.editForm = this.formBuilder.group({
@@ -65,7 +65,7 @@ export class EditTripComponent implements OnInit {
         console.log(this.message);
       },
       error: (error: any) => {
-        console.log('Error: ' + error);
+        console.log('Error:', error); // Debugging log
       },
     });
   }
@@ -79,11 +79,12 @@ export class EditTripComponent implements OnInit {
           this.router.navigate(['']);
         },
         error: (error: any) => {
-          console.log('Error: ' + error);
+          console.log('Error:', error); // Debugging log
         },
       });
     }
   }
+
   // get the form short name to access the form fields
   get f() {
     return this.editForm.controls;
