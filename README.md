@@ -1,9 +1,9 @@
-# CS465
+CS465
 
-# Aeriel Denmark 
-# CS 340 - Full Stack Development I - Journal #2
-# 8-1 Journal: Portfolio Submission
-# due Sun 12/22/24
+Aeriel Denmark 
+CS 340 - Full Stack Development I - Journal #2
+8-1 Journal: Portfolio Submission
+due Sun 12/22/24
 
 **Architecture**
 
