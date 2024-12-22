@@ -1,3 +1,10 @@
+# Combined .gitignore file
+# Changes from module7
+...
+
+# Changes from main
+...
+
 # Logs
 logs
 *.log
@@ -67,3 +74,9 @@ typings/
 !.vscode/launch.json
 !.vscode/extensions.json
 *.code-workspace
+=======
+.DS_Store
+CS465.zip
+../.DS_Store
+../CS465.zip
+>>>>>>> 183f3e9126b2ef8d46a59ab2f507379df0c8efcd
